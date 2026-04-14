@@ -1,1 +1,26 @@
-/* Пиши стили тут */
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 48px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input:checked ~ label {
+    color: #E9A800;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
